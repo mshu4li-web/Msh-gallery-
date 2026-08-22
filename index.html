@@ -4,46 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Msh Studio | معرض اللوحات</title>
-    <!-- استدعاء خط احترافي -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- خط ألكسندريا (البديل المجاني والأقرب لطابع خط ثمانية) -->
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* التصميم الفاخر */
         body { 
             margin: 0; 
             background-color: #070707; 
             color: #fff; 
-            font-family: 'Cairo', sans-serif; 
+            font-family: 'Alexandria', sans-serif; 
         }
         header { 
             text-align: center; 
-            padding: 10vh 20px; 
+            padding: 8vh 20px 4vh; 
             background: linear-gradient(180deg, #151515 0%, #070707 100%); 
             border-bottom: 1px solid #222; 
         }
-        header h1 { 
-            font-size: 3.5rem; 
-            margin: 0; 
-            font-weight: 700; 
-            letter-spacing: 2px;
-            background: -webkit-linear-gradient(#ffffff, #777777);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .logo {
+            max-width: 220px; /* يمكنك تكبير أو تصغير الشعار بتغيير هذا الرقم */
+            height: auto;
+            margin-bottom: 15px;
         }
         header p { 
             color: #999; 
-            font-size: 1.2rem; 
+            font-size: 1.1rem; 
             margin-top: 10px; 
             font-weight: 300; 
         }
         .gallery { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 40px; 
             padding: 60px 20px; 
             max-width: 1100px; 
             margin: auto; 
         }
         .card { 
+            flex: 1 1 350px;
+            max-width: 500px;
             background: #111; 
             border: 1px solid #222; 
             border-radius: 16px; 
@@ -121,7 +119,8 @@
 <body>
 
     <header>
-        <h1>Msh Studio</h1>
+        <!-- صورة الشعار بدلاً من النص -->
+        <img src="logo.png" alt="شعار Msh Studio" class="logo">
         <p>فن يجسد الخيال — تصفح اللوحات واطلب نسختك الآن</p>
     </header>
 
@@ -129,30 +128,30 @@
         <!-- اللوحة الأولى -->
         <div class="card">
             <div class="img-container">
-                <!-- تم وضع الامتداد .jpeg بالظبط كما في ملفاتك -->
-                <img src="اللوحة الأولى.jpeg" alt="اللوحة الأولى">
+                <!-- تم الاعتماد على الاسم المبسط 1.jpg لتجنب أي مشاكل -->
+                <img src="1.jpg" alt="اللوحة الأولى">
             </div>
             <div class="info">
-                <h3>الفيصل</h3>
-                <a href="https://api.whatsapp.com/send?phone=966555713188&text=أهلاً، أرغب بطلب اللوحة الأولى" class="btn" target="_blank">اطلب الآن</a>
+                <h3>اسم اللوحة الأولى</h3>
+                <a href="https://api.whatsapp.com/send?phone=966XXXXXXXXX&text=أهلاً، أرغب بطلب اللوحة الأولى" class="btn" target="_blank">اطلب الآن</a>
             </div>
         </div>
 
         <!-- اللوحة الثانية -->
         <div class="card">
             <div class="img-container">
-                <!-- تم وضع الامتداد .jpg بالظبط كما في ملفاتك -->
-                <img src="اللوحة الثانية.jpg" alt="اللوحة الثانية">
+                <!-- تم الاعتماد على الاسم المبسط 2.jpg -->
+                <img src="2.jpg" alt="اللوحة الثانية">
             </div>
             <div class="info">
-                <h3>حُب</h3>
-                <a href="https://api.whatsapp.com/send?phone=966555713188&text=أهلاً، أرغب بطلب اللوحة الثانية" class="btn" target="_blank">اطلب الآن</a>
+                <h3>اسم اللوحة الثانية</h3>
+                <a href="https://api.whatsapp.com/send?phone=966XXXXXXXXX&text=أهلاً، أرغب بطلب اللوحة الثانية" class="btn" target="_blank">اطلب الآن</a>
             </div>
         </div>
     </div>
 
     <!-- زر الواتساب -->
-    <a href="https://api.whatsapp.com/send?phone=966555713188&text=أهلاً بك Msh Studio، لدي استفسار" class="wa-float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=966XXXXXXXXX&text=أهلاً بك، لدي استفسار" class="wa-float" target="_blank">
         💬 تواصل معنا
     </a>
 
